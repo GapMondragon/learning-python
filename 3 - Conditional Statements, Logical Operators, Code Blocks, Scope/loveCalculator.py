@@ -49,7 +49,7 @@ lovemeter = int(lovemeter)
 print(f"{counterTRUE} + {counterLOVE} = {lovemeter}%")
 
 
-print("---------------------")
+print("----------------------")
 if lovemeter < 10 or lovemeter > 90:
     print(f"Your Love Meter is {lovemeter}. This means that you go together like coke and mentos.")
 elif lovemeter > 40 and lovemeter < 50:
@@ -57,4 +57,4 @@ elif lovemeter > 40 and lovemeter < 50:
 else:
     print(f"Your Love Meter is {lovemeter}")
 
-print("---------------------")
+print("----------------------")
