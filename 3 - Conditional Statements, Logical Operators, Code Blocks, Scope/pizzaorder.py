@@ -46,6 +46,7 @@ elif extra_cheese == "N" or extra_cheese == "n":
 else:
     cheeseWord = "With cheese!(Since you did not choose from the options, we added cheese for you!"
 
+print("------------------------------")
 print("\n")
 print(f"Here is what you ordered:")
 print(f"{sizeWord}")
@@ -53,3 +54,4 @@ print(f"{peppWord}")
 print(f"{cheeseWord}")
 print(f"Your final bil is: ${bill}")
 print("\n")
+print("------------------------------")
