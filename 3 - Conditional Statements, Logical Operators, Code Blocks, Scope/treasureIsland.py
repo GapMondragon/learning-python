@@ -29,7 +29,7 @@ print("Your mission is to find the treasure.")
 #Write your code below this line 👇
 
 print("---------------------------------------------")
-choice = input("You are at a crosroad. Where do you want to go? \n A) Left \n B) Right? \n")
+choice = input("You are at a crossroad. Where do you want to go? \n A) Left \n B) Right? \n")
 choice = choice.lower()
 if choice == "a": 
     choice = input("You come across what looks like a calm river. \n A) Swim across. \n B) Use a fallen log as a bridge. \n")
