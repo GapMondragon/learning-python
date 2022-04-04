@@ -24,5 +24,12 @@ print("\n-----Add Multiple/Extend----------------")
 fruits.extend(["Banana", "Raspberry", "Durian"])
 print(fruits)
 
+print("\n-----Split string to make list-----------")
+stringtosplit = ("Hello,from,AskPython")
+print(stringtosplit)
+splittedstring = stringtosplit.split(",")
+print(splittedstring)
+
+
 
 print("-------------")
