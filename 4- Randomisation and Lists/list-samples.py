@@ -28,6 +28,7 @@ print("\n-----Split string to make list-----------")
 stringtosplit = ("Hello,from,AskPython")
 print(stringtosplit)
 splittedstring = stringtosplit.split(",")
+# if there is a space after the comma, you should put split(", ")
 print(splittedstring)
 
 
