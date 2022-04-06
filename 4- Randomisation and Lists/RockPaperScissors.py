@@ -43,7 +43,7 @@ memelookhehe ='''
 
 # ----- PLAYER -----
 
-player = input("What do you choose?\n1 for Rock\n2 for Paper\n3 for Scissors\n\n")
+player = input("\nWhat do you choose?\n1 for Rock\n2 for Paper\n3 for Scissors\n\n")
 
 # got this idea sa tutorial to make it a list. I implemented it and made my code shorter for the ascii output
 choicelist = [rock,paper,scissors]
