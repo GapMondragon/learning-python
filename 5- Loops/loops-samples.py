@@ -1,9 +1,10 @@
 fruits = ["Apple", "Peach", "Pear"]
 print(fruits)
 print("-----")
-# print each fruit
+
+# foreach fruit in list(fruits)
 for fruit in fruits:
     print(fruit)
     print(fruit + " Pie")
-    
+
 print("-----")
