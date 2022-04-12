@@ -14,22 +14,25 @@ print("\n-----While Loop-----\n")
 
 
 # practice here:
-# https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%203&url=worlds%2Ftutorial_en%2Fhurdle3.json
-#   def turn_right():
-    # for step in range(3):
-    #     turn_left()
+# https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%204&url=worlds%2Ftutorial_en%2Fhurdle4.json
 
-    # def jump():
-    #     turn_left()
-    #     move()
-    #     turn_right()
-    #     move()
-    #     turn_right()
-    #     move()
-    #     turn_left()
-        
-    # while not at_goal():
-    #     if wall_in_front():
-    #         jump()
-    #     else:
-    #         move()
+# def turn_right():
+#     for step in range(3):
+#         turn_left()
+
+# def jump():
+#     turn_left()
+#     while wall_on_right():
+#         move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     while front_is_clear():
+#         move()
+#     turn_left()
+    
+# while not at_goal():
+#     if wall_in_front():
+#         jump()
+#     else:
+#         move()
