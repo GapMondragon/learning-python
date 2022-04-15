@@ -12,10 +12,11 @@ import random
 
 # Choose random word from list
 chosen_word = random.choice(word_list)
-print(chosen_word)
+print(f"{chosen_word}\n")
 
 # ask for a letter then convert to lowercase
 guess = input("Guess a letter: ").lower()
+print("\n")
 
 # No need to convert string to list
 # it will convert the chosen string into a list when using for
@@ -25,3 +26,4 @@ for letter in chosen_word:
     else:
         print("Wrong")
 
+print("\n")
