@@ -23,6 +23,7 @@ display = []
 for eachletter in chosen_word:
     display.append("_")
 print(display)
+
 # ask for a letter then convert to lowercase
 guess = input("Guess a letter: ").lower()
 print("\n")
