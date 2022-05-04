@@ -13,3 +13,5 @@ score = 1
 score += 3
 gamesPlayed = 5
 print(f"Your score is {score} out of the {gamesPlayed} games you played")
+
+print("----------------------")

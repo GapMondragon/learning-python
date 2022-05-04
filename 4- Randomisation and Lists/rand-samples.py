@@ -6,12 +6,14 @@ print(random_integer)
 
 # this is how modules work:
 # import my_pi.py
+print("----- Importing Modules -----")
 import my_pi
 print(my_pi.pi)
 
 # generate random from 0 - 0.99999
+print("---- generate random from 0 - 0.99999 ----")
 random_float = random.random()
 print(random_float)
 # if you want to have more than 0.9999 multiply it 
-
+print("----------")
 

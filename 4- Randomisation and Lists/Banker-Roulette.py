@@ -12,7 +12,10 @@ length_of_names_list = len(names)
 random_number = random.randint(0,length_of_names_list - 1)
 payerist = (names[random_number])
 
+print(f"choices are: {names}")
 print(f"\n{payerist} will be the one to pay!! ^^")
 print("\n----- Alternatively, you could use choice()-----")
 altchoice = random.choice(names)
+while altchoice == payerist:
+    altchoice = random.choice(names)
 print(f"or {altchoice} could pay for it too?")

@@ -11,4 +11,4 @@ print(dirty_dozen)
 
 print("-----Print dirty_dozen[1][1]-----")
 # 1st index of the first index
-print(dirty_dozen[1][1])
+print(dirty_dozen[1][2])

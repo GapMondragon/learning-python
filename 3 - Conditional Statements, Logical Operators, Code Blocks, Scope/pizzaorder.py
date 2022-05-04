@@ -36,7 +36,7 @@ elif add_pepperoni == "N" or add_pepperoni == "n":
     peppWord = "Without pepperoni :("
 else:
     bill += 3
-    peppWord = "With pepperoni!(Since you did not choose an option, we added it for you at your cost ^^"
+    peppWord = "With pepperoni!(Since you did not choose an option, we added it for you at your cost ^^)"
 
 if extra_cheese == "Y" or extra_cheese == "y":
     bill += 1
