@@ -19,6 +19,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 pwString = ""
 
+# for x in range() just says how many times mo himuon ang unod niya
 for x in range(0, nr_letters):
     randomletter = random.randint(0,len(letters)-1)
     pwString += (letters[randomletter])
