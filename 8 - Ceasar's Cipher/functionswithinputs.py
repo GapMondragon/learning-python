@@ -3,6 +3,8 @@
 # Write 3 print statements inside the function.
 # Call the greet() function and run your code.
 
+# function(parameter)
+# value of parameter is called the argument
 
 print("----------------")
 
