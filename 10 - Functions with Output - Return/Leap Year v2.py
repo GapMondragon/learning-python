@@ -1,8 +1,6 @@
 # Days in Months v2
 # copied from Day 3 leap year exercise
 
-
-
 def is_leap(year):
     if year % 4 == 0:
         if year % 100 == 0:
@@ -14,7 +12,6 @@ def is_leap(year):
             return True
     else:
         return False
-
 
 def days_in_month(year,month):
     if month < 1 or month > 12:
