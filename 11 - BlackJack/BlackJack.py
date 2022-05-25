@@ -1,6 +1,3 @@
-# following this checklist
-# http://listmoz.com/view/6h34DJpvJBFVRlZfJvxF
-
 import random
 playerCards = []
 computerCards = []
@@ -15,3 +12,11 @@ playerSum = sum(playerCards)
 computerSum = sum(computerCards)
 print(f"Player has: {playerCards} \n Total: {playerSum}")
 print(f"Computer has: {computerCards} \n Total: {computerSum}")
+
+if computerSum == 21:
+    print("Computer has BlackJack. Computer Wins!")
+if playerSum == 21:
+    if computerSum == 21:
+        print("Draw!")
+    else:
+        print("Player Wins!")
