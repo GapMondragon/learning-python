@@ -1,3 +1,6 @@
+# following this checklist
+# http://listmoz.com/view/6h34DJpvJBFVRlZfJvxF
+
 import random
 playerCards = []
 computerCards = []
