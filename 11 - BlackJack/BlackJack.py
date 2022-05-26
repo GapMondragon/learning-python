@@ -11,29 +11,36 @@ for x in range(2):
 
 playerSum = sum(playerCards)
 computerSum = sum(computerCards)
-comHiddenCard = []
 
-comHiddenCard = computerCards
-comHiddenCard[1] = "X"
+
+if computerSum == 21:
+    comInitialCards = computerCards
+else:
+    comInitialCards = []
+    comInitialCards = list(computerCards)
+    comInitialCards[1] = "X"
 
 def playerPhaseShowCards():
     playerSum = sum(playerCards)
     print("\n-----------------\n")
     print(f"Player has: {playerCards}")
     print(f"Total: {playerSum}")
-    print(f"Computer has: {computerCards}")
+    print(f"Computer has: {comInitialCards}")
     # print(f"Total: {computerSum}")
     print("-----------------\n")
 
 
 def initialDrawVerdict():
     if computerSum == 21:
-        print("Computer has BlackJack. Computer Wins!")
+        if playerSum == 21:
+            print("Push! It is a draw.")
+        else:
+            print("Computer has BlackJack. Computer Wins!")
     if playerSum == 21:
         if computerSum == 21:
-            print("Draw!")
+            print("Push! It is a draw.")
         else:
-            print("Player Wins!")
+            print("Player has BlackJack. You Win!")
 
 
 
@@ -46,24 +53,32 @@ def aceCheck(playercomputer):
             currentCards[i] = 1
             replaceAceContinue = False
         i += 1
-    print(currentCards)
+    return currentCards
 
 def drawCardPlayerPhase():
-    anotherCard = input("Do you want another card? y or n \n")
-    if anotherCard == "y":
+    anotherCard = input("Do you want another card? \n Type 'hit' or 'stand' \n")
+    if anotherCard == "hit":
         playerCards.append(random.choice(cards))
         playerSum = sum(playerCards)
         playerPhaseShowCards()
         if playerSum > 21:
-            print("Over 21! You Lose. :p")
+            if sum(aceCheck(playerCards)) >= 21:
+                drawCardPlayerPhase()
+            else:
+                print("Bust! Over 21! You Lose. :p")
         else:
             drawCardPlayerPhase()
+
+def drawCardComputerPhase():
+    print("Computer: My turn")
+
 
 playerPhaseShowCards()
 initialDrawVerdict()
 drawCardPlayerPhase()
+drawCardComputerPhase()
 
-
+print("-----------------\n")
 
 
 
