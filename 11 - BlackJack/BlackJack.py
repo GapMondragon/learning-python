@@ -20,6 +20,14 @@ else:
     comInitialCards = list(computerCards)
     comInitialCards[1] = "X"
 
+def aceCheck(playercomputerCards):
+    if 11 in playercomputerCards:
+        currentCards = list(playercomputerCards)
+        currentCards.remove(11)
+        currentCards.append(1)
+        print("Print changed value of 11 to 1")
+        return currentCards
+
 def playerPhaseShowCards():
     playerSum = sum(playerCards)
     print("\n-----------------\n")
@@ -28,7 +36,16 @@ def playerPhaseShowCards():
     print(f"Computer has: {comInitialCards}")
     # print(f"Total: {computerSum}")
     print("-----------------\n")
-
+    
+    if playerSum > 21:
+        newCards = aceCheck(playerCards)
+        newCardsSum = sum(newCards)
+        if newCardsSum > 21:
+            print("BUST! OVER 21! Computer Wins!")
+        else:
+            drawCardComputerPhase()
+    else:
+        drawCardPlayerPhase()
 
 def initialDrawVerdict():
     if computerSum == 21:
@@ -44,30 +61,15 @@ def initialDrawVerdict():
 
 
 
-def aceCheck(playercomputer):
-    currentCards = (playercomputer)
-    replaceAceContinue = True
-    while replaceAceContinue:
-        i = 0
-        if currentCards[i] == 11:
-            currentCards[i] = 1
-            replaceAceContinue = False
-        i += 1
-    return currentCards
+
 
 def drawCardPlayerPhase():
     anotherCard = input("Do you want another card? \n Type 'hit' or 'stand' \n")
     if anotherCard == "hit":
         playerCards.append(random.choice(cards))
-        playerSum = sum(playerCards)
         playerPhaseShowCards()
-        if playerSum > 21:
-            if sum(aceCheck(playerCards)) >= 21:
-                drawCardPlayerPhase()
-            else:
-                print("Bust! Over 21! You Lose. :p")
-        else:
-            drawCardPlayerPhase()
+    else:
+        drawCardComputerPhase()
 
 def drawCardComputerPhase():
     print("Computer: My turn")
@@ -75,8 +77,6 @@ def drawCardComputerPhase():
 
 playerPhaseShowCards()
 initialDrawVerdict()
-drawCardPlayerPhase()
-drawCardComputerPhase()
 
 print("-----------------\n")
 
