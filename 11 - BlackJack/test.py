@@ -1,7 +1,5 @@
-list = [11,11,2,3]
-list.remove(11)
-list.append(1)
-print(list)
+y = "thin;sleep;run;"
 
-list = [5,2,3]
-print(list)
+z = y.split(';')
+
+print(len(z))
