@@ -5,7 +5,8 @@
 name = input("What is your name? ")
 namelength = str(len(name))
 
-print("Your name '" + name + "' has " + namelength + " characters.")
+# print("Your name '" + name + "' has " + namelength + " characters.")
+print(f"Your name '{name}' has {namelength} characters.")
 
 # print type of the variable
 print(type(name)) 
