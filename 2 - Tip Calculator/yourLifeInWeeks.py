@@ -5,13 +5,13 @@
 
 age = input("What is your current age? ")
 # convert age to float since it is a string
-yearsFloat = float(90 - float(age))
-days = yearsFloat * 365 
-weeks = yearsFloat * 52
-months = yearsFloat * 12
+yearsLeft = float(90 - float(age))
+days = yearsLeft * 365 
+weeks = yearsLeft * 52
+months = yearsLeft * 12
 
 # convert to int for better presentation
-years = int(yearsFloat)
+years = int(yearsLeft)
 days = int(days)
 weeks = int(weeks)
 months = int(months)
