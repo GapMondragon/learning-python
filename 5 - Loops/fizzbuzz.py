@@ -15,19 +15,19 @@
 
 # 1
 # 2
-# Fizz
+# Fizz (3) 
 # 4
-# Buzz
-# Fizz
+# Buzz (5) 
+# Fizz (6)
 # 7
 # 8
-# Fizz
-# Buzz
+# Fizz (9)
+# Buzz (10)
 # 11
-# Fizz
+# Fizz (11)
 # 13
 # 14
-# FizzBuzz
+# FizzBuzz (15)
 
 # Remember your answer should 
 # start from 1 and go up to and including 100. 
